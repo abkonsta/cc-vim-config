@@ -1,8 +1,15 @@
-# To Install
+# Vim Configuration
+
+    This is a fork of the Case Commons' MacVim configuration repository
+    with a few small additions, notably, the railscasts color theme and
+    keyboard mapping to support Cmd+Shit+N for invoking the Command-T
+    vim plugin.
+
+# To Instal
 
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone git@github.com:Casecommons/vim-config.git ~/.vim
+    git clone git@github.com:abkonsta/cc-vim-config.git ~/.vim
     cd ~/.vim
     git submodule update --init
     ln -s ~/.vim/vimrc ~/.vimrc
