@@ -1,11 +1,13 @@
 # Vim Configuration
 
 This is a fork of the Case Commons' MacVim configuration repository with a few
-small additions, notably, the railscasts color theme and keyboard mapping to
-support Cmd+Shit+N for invoking the Command-T vim plugin.
+small additions, notably, the railscasts color theme, some keyboard mappings, 
+and the Command-T plugin with instructions.
 
-You should be using 'brew' for installing various tools, rvm for managing versions
-of ruby, and you should have XCode installed.
+    NOTE: You should be using 'brew' for installing various tools,
+    'rvm' for managing versions of ruby, and you should have XCode
+    installed. These are all fairly standard tools and you are
+    encouraged to use them!
 
 # To Install
 
@@ -24,8 +26,8 @@ To make Command-T work, after completing the steps above:
     ruby extconf.rb
     make
 
-These instructions assume that you use RVM and that you have XCode installed.
 If you do not use RVM, you do not need to tell it to use the system ruby.
+If you do not have XCode installed, you won't be able to compile the c program.
 You can download XCode from Apple's app store. 
 
 To get "Find in project" like functionality from Ack, install ack:
@@ -44,7 +46,8 @@ project (and the current rvm gemset!) using <leader>rt, which is ',rt'.
 
 I mapped Command-] to "go to definition" and Command-[ to "next tag" for
 convenience. Use Ctrl-T to go back up the tag stack. For more information,
-use ':help tagsrch'.
+use ':help tagsrch'. If you are curious about the customized keyboard
+shortcuts, look in ~/.vim/init/keybindings.vim.
 
 # Note to iTerm/vim users
 
@@ -56,12 +59,12 @@ background. *Make sure you completely close iTerm before running the script.*
     cd ~/.vim/iterm
     . ./iterm_profile.sh
 
-Profile script was adapted from http://kpumuk.info.
+The profile script was adapted from http://kpumuk.info.
 Turn off transparent background (Command+U), it's annoying.
 
 # Updating
 
-As long as your checkout is kept clean, you can easily update, rebase your local 
+As long as your checkout is kept clean, you can easily update, rebase your local
 changes and update submodules with:
 
     cd ~/.vim && git pull --rebase ; git submodule update ; cd -
