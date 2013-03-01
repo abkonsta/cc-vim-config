@@ -69,20 +69,15 @@ map <M-D-Right> :bn<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" FuzzyFinder and switchback commands
-map <leader>e   :e#<CR>
-map <leader>b   :FufBuffer<CR>
-map <leader><C-N> :FufFile **/<CR>
-map <D-e> :FufBuffer<CR>
-map <leader>n :FufFile **/<CR>
-map <D-N> :FufFile **/<CR>
-
-" refresh the FuzzyFinder cache
-map <leader>rf :FufRenewCache<CR>
+" FuzzyFinder
+map <D-e>       :FufBuffer<CR>
+map <leader>rb  :FufBuffer<CR>
 
 " Command-T
 map <D-N>       :CommandTFlush<CR>:CommandT<CR>
-map <leader>f   :CommandTFlush<CR>:CommandT<CR>
+map <leader>F   :CommandTFlush<CR>:CommandT<CR>
+nmap <C-p>      :CommandT<CR>
+map <leader>f   :CommandT<CR>
 
 " ctags with rails load path
 " these load ctags from rails environment, as such
