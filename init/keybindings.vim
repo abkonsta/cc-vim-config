@@ -92,7 +92,7 @@ map <leader>f   :CommandTFlush<CR>:CommandT<CR>
 
 " abkonsta's ctags and shortcuts - these will generate ctags for any ruby 
 " project and include  the current rvm gemset
-map <leader>rt :!/usr/local/bin/ctags --language-force=ruby --exclude=.git --exclude=log -R * `bundle show --paths`<CR>
+map <leader>rt :!/usr/local/bin/ctags --exclude=.git --exclude=log -R * `bundle show --paths`<CR>
 map <D-]> <C-]>
 map <D-[> :tn<CR>
 
