@@ -1,13 +1,11 @@
 # Vim Configuration
 
 This is a fork of the Case Commons' MacVim configuration repository with a few
-small additions, notably, the railscasts color theme, some keyboard mappings, 
-and the Command-T plugin with instructions.
+small additions, notably, the railscasts color theme, keyboard mappings, git
+gutter hints and the Command-T plugin with instructions.
 
-    NOTE: You should be using 'brew' for installing various tools,
-    'rvm' for managing versions of ruby, and you should have XCode
-    installed. These are all fairly standard tools and you are
-    encouraged to use them!
+    NOTE: You should be using 'brew' for installing various tools, 'rvm' for managing versions 
+    of ruby, and you should have XCode installed.
 
 # To Install
 
@@ -44,12 +42,26 @@ option, among other things. Don't use it, install a different one with brew:
 If you are using rvm, you will be able to generate ctags for your ruby/rails
 project (and the current rvm gemset!) using <leader>rt, which is ',rt'.
 
-I mapped Command-] to "go to definition" and Command-[ to "next tag" for
-convenience. Use Ctrl-T to go back up the tag stack. For more information,
-use ':help tagsrch'. If you are curious about the customized keyboard
-shortcuts, look in ~/.vim/init/keybindings.vim.
+# ctags key mapping
 
-# Note to iTerm/vim users
+    Command-]  -  go to definition
+    Command-[  -  go to "next tag"
+    Ctrl-T     -  go back up the tag stack
+
+For more information, use ':help tagsrch'. All the keybindings should be defined
+in ~/.vim/init/keybindings.vim.
+
+# crash course on macvim key bindings
+
+    Command-Shift-N    -  fuzzy search by file name
+    :vs or ,v          -  split screen vertically
+    :sp                -  split screen horizontally
+    :A                 -  toggle between the model and its rspec
+    Control-W + arrows -  move buffer focus in the direction of the arrow
+    ,b                 -  list previously opened files in all buffers
+    \                  -  view the list of files in project (NerdTree)
+
+# Note to iTerm users
 
 For terminal mode vim, use railscasts-iterm color scheme and set your default 
 iTerm profile to have dark background color. You can use the shell script 
