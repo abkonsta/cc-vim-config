@@ -71,7 +71,7 @@ vmap <s-tab> <gv
 
 " FuzzyFinder
 map <D-e>       :FufBuffer<CR>
-map <leader>rb  :FufBuffer<CR>
+map <leader>b   :FufBuffer<CR>
 
 " Command-T
 map <D-N>       :CommandTFlush<CR>:CommandT<CR>
